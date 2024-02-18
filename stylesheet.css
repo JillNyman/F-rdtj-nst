@@ -79,6 +79,47 @@ i {
   font-size: 20px;
 }
 
+.btn-container{
+  display: flex;
+  flex-direction: column;
+}
+
+#hidden-travel-btns{
+  display: flex;
+  flex-direction: column;
+}
+
+#hidden-travel-btns .btn, .important-container .btn{
+  display: inline;
+width: 90%;
+height: 60px;
+border: 2px solid;
+border-radius: 25px;
+margin: 3% auto 3% auto;
+padding: 10px 30% 10px 30%;
+font-weight: bold;
+font-size: 14px;
+text-align: center;
+text-decoration: none; 
+margin-bottom: 10px;
+ }
+
+
+.btn-container .btn{
+  display: inline;
+  width: 90%;
+  height: 60px;
+  border: 2px solid;
+  border-radius: 25px;
+  margin: 3% auto 3% auto;
+  padding: 10px 30% 10px 30%;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none; 
+ }
+
+
 #important-btn{
   display: inline;
 width: 90%;
@@ -98,7 +139,7 @@ font-size: 20px;
   border-width: 2px;
 }
 
-.btn-green {
+.btn-green{
   background-color: rgb(108, 199, 65);
   border: 2px solid rgb(50, 50, 50);
 }
@@ -129,6 +170,26 @@ font-size: 20px;
   cursor: pointer;
 }
 
+@media screen and (max-width: 428px){
+  
+.important-container .btn-blue{
+  font-size: 12px;  
+  padding: 10px;
+}
+}
+
+@media screen and (max-width: 550px) {
+  .btn-container .btn{
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 509px) {
+  .btn-container .btn{
+    height: 85px;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .btn-red,
   .btn-green,
@@ -143,8 +204,6 @@ font-size: 20px;
     cursor: pointer;
   }
 }
-
-/*@media screen and (min-width: 800px)*/
 
 .ok-btn {
   border-radius: 25px;
