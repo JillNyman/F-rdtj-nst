@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boka resa</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e7c2e63614.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header-header">
+      <span><a href="index.html">
+          <img id="logo" src="IMAGES/Fardtjansten-logga-768x768.jpg" alt="logo"
+          /></a>
+      </span>
+      
+
+      <h1>BOKA RESA</h1>
+      <!--LOGGA IN-->
+      <div class="important-container" id="login">
+        <h2>Identifiering</h2>
+        <button class="btn-id" id="btn-id">
+          LOGGA IN <img src="IMAGES/BankID_logo.svg" alt="bank-id"/>
+        </button>
+      </div>
+
+       <!--INLOGGAD -->
+      <div id="identified-container">
+        <h2>Inloggad</h2>
+        <div id="person-id">
+          <p>Maria Karlsson,</p>
+          <p>19470313-8503</p>
+        </div>
+      </div>
+
+      <div class="important-container" id="choice-container">
+        <div class="booking-step">
+          <p>STEG 1/6</p>
+        </div>
+        <h2>Boka ny resa</h2>
+        <p>Vill du boka en enkelresa?</p>
+        <p>Vill du boka en tur- och returresa?</p>
+        <i class="fa-regular fa-hand-point-down fa-xl"></i><br>
+        <button class="btn-blue" id="singletrip-btn">BOKA NY RESA</button>
+        <div class="line"></div>    
+        <h2>Återkommande resa</h2>
+        <p>Åker du en viss sträcka regelbundet?</p>
+        <p>Här nedan kan du boka en återkommande resa!</p>
+        <i class="fa-regular fa-hand-point-down fa-xl"></i><br>
+        <a href="recurring.html"> <button role="link" class="btn-blue">BOKA ÅTERKOMMANDE RESA</button></a> 
+        <div class="line"></div>
+        <h2>Redan bokade resor</h2>
+        <p>Vill du ändra något?</p>
+        <p>Vill du se dina bokade resor?</p>
+        <i class="fa-regular fa-hand-point-down fa-xl"></i><br>
+        <a href="booked.html"> <button role="link" class="btn-blue"> BOKADE RESOR</button></a> 
+        
+      </div>
+
+      <div id="hidden-travel-btns">
+        <div class="booking-step">
+          <p>STEG 1/6</p>
+        </div>
+        <h2>Alternativ</h2>
+        <a href="recurring.html"> <button role="link" class="btn-blue">BOKA ÅTERKOMMANDE RESA</button></a>
+        <a href="booked.html"> <button role="link" class="btn-blue"> BOKADE RESOR</button></a> 
+      </div>
+       
+
+      <div id="travel-container-one-booking">
+        <div class="booking-step">
+          <p>STEG 2/6</p>
+        </div>
+        <h2>När vill du resa?</h2>
+        <form><h3>Datum</h3>
+          <input type="text" id="date" placeholder="ÅÅÅÅ/MM/DD">
+          <div class="line"></div>
+          <h3>Klockslag</h3>
+          <input type="radio" id="depart" value="Avgång" checked>
+          <label for="depart">Avgång</label>
+          <input type="radio" id="arrival" value="Ankomst">
+          <label for="arrival">Ankomst</label>
+          <input type="text" id="hours" placeholder="HH:MM">        
+        </form>  
+        <button class="btn-blue" id="next-btn-one"> GÅ VIDARE</button>
+            
+      </div>
+
+      <div id="travel-container-two-booking">
+        <div class="booking-step">
+          <p>STEG 3/6</p>
+        </div>
+        <h2>Var vill du åka?</h2>
+        <div class="saved-container">
+          <button class="btn-blue" id="saved-destinations">Sparade destinationer</button>
+          <button class="btn-blue" id="other-destination">Jag vill åka till en annan adress</button>
+        </div>
+        <form id="search-address"><h3>SÖK</h3> <input type="text" placeholder="T ex adress...">
+          <button type="submit" class="ok-btn">OK</button>
+               
+
+        </form>
+        <div id="hidden-container-destination">
+          <h2>Sparade destinationer</h2>
+          <button type="button" class="btn-blue" id="destination-one">Barnbarnen</button>
+              <button type="button" class="btn-blue" id="destination-two">Karolinska...</button>
+              <button type="button" class="btn-blue" id="destination-three">Vårdcentralen</button>
+              <button type="button" class="btn-blue" id="destination-four">Storgatan 8...</button>
+              <div id="hidden-chosen-destination">
+          <h4>Barnbarnen</h4>
+          <p>Adress: Nygatan 8, Staden</p>
+          <button type="button" class="btn-blue" id="change-dest-btn">ÄNDRA</button>
+        </div>
+        </div>
+        <button class="btn-blue" id="next-btn-two"> GÅ VIDARE</button>
+
+      </div> 
+
+      <div id="travel-container-three-booking">
+        <div class="booking-step">
+          <p>STEG 4/6</p>
+        </div>
+        <h3>Var åker du ifrån?</h3>
+        <div class="saved-container" id="saved-start">
+          <button class="btn-blue" id="saved-address">Sparade adresser</button>
+          <button class="btn-blue" id="other-address">Jag vill åka från en annan adress</button>
+        </div>  
+        <div id="hidden-container-start">
+          <button type="button" class="btn-blue" id="start-one">Barnbarnen</button>
+              <button type="button" class="btn-blue" id="start-two">Karolinska...</button>
+              <button type="button" class="btn-blue" id="start-three">Vårdcentralen</button>
+              <button type="button" class="btn-blue" id="start-four">Storgatan 8...</button>
+              <button type="button" class="btn-blue" id="start-five">Hemma</button>
+        </div>
+        <button class="btn-blue" id="next-btn-three"> GÅ VIDARE</button>
+      </div>
+
+      <div id="travel-container-four-booking">
+        <div class="booking-step">
+          <p>STEG 5/6</p>
+        </div>
+        <h3>Vill du boka returresa?</h3>
+        <p id="p-info">OBS! För att det ska räknas som en returresa, behöver den påbörjas senast 72 timmar efter den första resans avgångstid.</p>
+        <p>Från</p>
+        <p class="return-trip" id="return-from">FRÅN</p>
+        <p>Till</p>
+        <p class="return-trip" id="return-to">TILL</p>
+        <form><h4>Datum</h4>
+          <input type="text" id="date-return" placeholder="ÅÅÅÅ/MM/DD">
+          <div class="line"></div>
+          <h4>Klockslag</h4>
+          <input type="radio" id="depart-return" value="Avgång" checked>
+          <label for="depart-return">Avgång</label>
+          <input type="radio" id="arrival-return" value="Ankomst">
+          <label for="arrival-return">Ankomst</label>
+          <input type="text" id="hours-return" placeholder="HH:MM">
+        </form>
+        <button class="btn-blue" id="next-btn-four"> GÅ VIDARE</button>
+      </div>
+
+      <div id="travel-container-five-booking">
+        <div class="booking-step">
+          <p>STEG 6/6</p>
+        </div>
+        <h2>Tillval</h2>
+        <button type="button" class="btn-blue">Rullstol</button>
+        <button type="button" class="btn-blue">Ledsagare</button>
+        <button type="button" class="btn-blue">Sällskapsdjur</button>
+        <button type="button" class="btn-blue">Assistanshund</button>
+        <button type="button" class="btn-blue">Medresenär</button>
+        <button type="button" class="btn-blue">Annat...</button>
+        <form>        
+          <input type="checkbox" id="no-extra">
+          <label for="no-extra">inget tillval</label>
+        </form>
+
+      </div>
+      <a href="receipt.html"> <button role="link" class="btn-blue" id="check-btn">GRANSKA BOKNING</button></a>
+      
+    </div>
+    <div class="search-bar">
+      <a href="index.html"><button role="link" class="btn-green">Till startsidan</button></a> 
+      <button class="btn-blue">Övriga frågor</button>
+    </div>
+      <div class="search">
+      <p>SÖK</p>
+      <form>
+      <input type="text" name="search" />
+      <button class="ok-btn">OK</button>
+      </form>
+      <a href="availability.html"><p>Tillgänglighetsredogörelse</p></a>
+      </div>
+  
+  <script src="login.js"></script>
+  </body>
+  
+</html>

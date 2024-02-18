@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bokade resor</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e7c2e63614.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header-header">
+      <span
+        ><a href="index.html">
+          <img id="logo" src="IMAGES/Fardtjansten-logga-768x768.jpg" alt="logo"/></a
+      ></span>
+
+      <div id="screen-modal" class="modal">
+        <div class="modal-text">
+          <span class="close">&times;</span>
+          <table id="booked-table">
+            <tr>
+              <th>Datum</th>
+              <td>14 jan</td>
+              <td>14 jan</td>
+            </tr>
+            <tr>
+              <th>Klockslag</th>
+              <td>13.30</td>
+              <td>14.30</td>
+            </tr>
+            <tr>
+              <th>Från</th>
+              <td>Hemma</td>
+              <td>Vårdcentralen</td>
+            </tr>
+            <tr>
+              <th>Till</th>
+              <td>Vårdcentralen</td>
+              <td>Hemma</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div id="booked-container">
+        <h1>DINA BOKADE RESOR</h1>
+        <div class="important-container">
+          <h2>Kommande resor</h2>
+          <button id="show-booked" class="btn-blue">
+            14 jan 2024 | Vårdcentralen | t/r
+          </button>
+          <button class="btn-blue">23 jan 2024 | Karolinska sjh| t/r</button>
+          <button class="btn-blue">14 feb 2024 | Vårdcentralen| t/r</button>
+        </div>
+        <div class="important-container">
+          <h2>Tidigare resor</h2>
+          <button class="btn-blue">20 dec 2023 | Vårdcentralen| t/r</button>
+          <button class="btn-blue">13 dec 2023 | Barnbarnen| enkel</button>
+          <button class="btn-blue">29 nov 2023 | Vårdcentralen| t/r</button>
+          <button class="btn-blue">Se fler...</button>
+        </div>
+        <div class="important-container">
+          <h2>Avbokade resor</h2>
+          <button class="btn-blue">18 nov 2023 | Vårdcentralen</button>
+          <button class="btn-blue">2 sep 2023 | Vårdcentralen</button>
+        </div>
+      </div>
+    </div>
+    <div class="search-bar">
+      <a href="index.html"><button role="link" class="btn-green">Till startsidan</button></a> 
+      <button class="btn-blue">Övriga frågor</button>
+    </div>
+      <div class="search">
+        <p>SÖK</p>
+        <form>
+          <input type="text" name="search" />
+          <button class="ok-btn">OK</button>
+        </form>
+        <a href="availability.html"><p>Tillgänglighetsredogörelse</p></a>
+      </div>
+    
+    <script src="bookings.js"></script>
+  </body>
+  
+</html>

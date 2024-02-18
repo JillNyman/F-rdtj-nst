@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svar</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e7c2e63614.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    
+        
+        <div class="header-header">
+            <span
+        ><a href="index.html">
+          <img id="logo" src="IMAGES/Fardtjansten-logga-768x768.jpg" alt="logo"/></a
+      ></span>
+          
+          <h1>SÅ RESER DU MED FÄRDTJÄNST</h1>
+          
+        
+            <div class="important-container-q">          
+                <button id="important-btn">VIKTIGT!</button>
+                <p>Du måste ha med dig ditt <b>färdtjänstkort</b> vid varje resa med färdtjänsten.</p>
+                <p>Om du får problem med färdtjänstkortet <b>kontaktar du kundtjänsten</b> för 
+                 färdtjänst och sjukresor.</p>
+                <p>Föraren väntar på dig i <b>fem minuter</b> från och med tiden för din avresa.</p>
+                <p><b>Var ute i god tid!</b> Trafiksituationen i Stockholm varierar kraftigt och kan påverka restiden.</p>        
+            </div>
+
+        
+      
+            <div class="answers-container">
+                <h3>Var ute i god tid</h3>
+                <p>Dina resor samplaneras i den mån det är möjligt. Det betyder att du kan få <span id="points">...</span> 
+                <span id="show-more">resa tillsammans med andra resenärer. Den andra resenären hämtas och lämnas innan 
+                eller under din resa.<br><br>
+                Oavsett om du beställer din resa flera dagar i förväg eller några timmar innan du vill resa, hanteras 
+                resorna på samma sätt och skickas ut till bilarna samtidigt.<br><br> Det går aldrig att garantera att en bil 
+                kommer i tid exempelvis genom att beställa den med längre framförhållning.</span></p>
+                <button onclick="toggleText()" id="show-more-btn">+</button>
+            </div>
+            <div class="answers-container">
+                <h3>Uppehåll under resan</h3>
+                <p>Du kan göra ett stopp på fem minuter längs färdvägen då taxin
+                <span id="points-two">...</span>
+                <span id="show-more-two">väntar. Gäller bara för dig som reser med färdtjänsttaxi.<br><br> Om du vill göra ett 
+                längre stopp måste du beställa en ny resa. Tänk på att det är föraren som bestämmer färdvägen och att du 
+                inte får använda stoppet till att hämta upp eller lämna av medresenärer.<br><br>
+
+                Ska du besöka en <b>grav</b> så kan du göra ett stopp på upp till tjugo minuter. Tala då om vid beställningen att 
+                det gäller en gravvårdsresa. Gravvårdsresa kan även du som reser med rullstolstaxi och bårtaxi beställa.</span>
+                </p>
+                <button onclick="toggleTextTwo()" id="show-more-btn-two">+</button>
+            </div>
+            <div class="answers-container">
+                <h3>När bilen är framme</h3>
+                <p>
+                <span id="points-three">...</span>
+                <span id="show-more-three"></span>
+                </p>
+                <button  class="show-more">+</button>
+            </div>
+            <div class="answers-container">
+                <h3>När du reser med rullstolstaxi</h3>
+                <p>Du som har beställt en rullstolstaxi får ha med dig ett handbagage och/eller ett gånghjälpmedel 
+                <span id="points-four">...</span>
+                <span id="show-more-four">alternativt en rullstol. Föraren har med sig trappklättrare och 
+                transportrullstol om du vid beställningen uppgav att du har behov av det.<br>
+                Vissa rullstolar av större modell och elektriska rullstolar fungerar inte i 
+                kombination med alla trappklättrare. Då är det bättre att beställa en resa 
+                med transportrullstol, som fungerar med trappklättraren.</span>
+                </p>
+                <button class="show-more">+</button>
+            </div>
+            
+        </div>
+        <div class="search-bar">
+            <a href="index.html"><button  role="link" class="btn-green">Till startsidan</button></a> 
+            <button class="btn-blue">Övriga frågor</button>
+          </div>
+                <div class="search">
+                <p>SÖK</p>
+                <form>
+                <input type="text" name="search" />
+                <button class="ok-btn">OK</button>
+                </form>
+                <a href="availability.html"><p>Tillgänglighetsredogörelse</p></a>
+                </div>
+          
+          
+
+
+<script src="login.js"></script> 
+</body>
+
+
+</html>

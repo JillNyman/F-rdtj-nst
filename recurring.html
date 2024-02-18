@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Återkommande resa</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e7c2e63614.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header-header">
+      <span
+        ><a href="index.html">
+          <img id="logo" src="IMAGES/Fardtjansten-logga-768x768.jpg" alt="logo"/></a
+      ></span>
+
+      <h1>BOKA ÅTERKOMMANDE RESA</h1>
+
+      <div id="identified-container-rec">
+        <h3>Inloggad</h3>
+        <div id="person-id">
+          <p>Maria Karlsson,</p>
+          <p>19470313-8503</p>
+        </div>
+      </div>
+
+      <div id="recurring-container-one">
+        <div class="booking-step">
+          <p>STEG 1/6</p>
+        </div>
+        <h3>Välj</h3>
+        <button class="btn-blue" id="recurring-day-btn">Särskild veckodag</button>
+        <button class="btn-blue" id="recurring-date-btn">Datum i månaden</button>
+        <button class="btn-blue" id="recurring-interval-btn">Intervall...</button>
+        <button class="btn-blue" id="recurring-other-btn">Annat...</button>
+
+        <div id="recurring-day">
+            <form>
+              <div id="first-column">
+                <input type="checkbox" id="monday">
+                <label for="monday">måndag</label>
+                <input type="checkbox" id="tuesday">
+                <label for="tuesday">tisdag</label>
+                <input type="checkbox" id="wednesday">
+                <label for="wednesday">onsdag</label>
+                <input type="checkbox" id="thursday">
+                <label for="thursday">torsdag</label>
+              </div>
+              <div id="second-column">
+                <input type="checkbox" id="friday">
+                <label for="friday">fredag</label>
+                <input type="checkbox" id="saturday">
+                <label for="saturday">lördag</label>
+                <input type="checkbox" id="sunday">
+                <label for="sunday">söndag</label>
+              </div>
+            </form>
+           <button class="btn-blue" id="next-btn-zero"> GÅ VIDARE</button>          
+            
+
+        </div>
+
+        <div id="recurring-date">
+            <form>
+                <label for="dates">Välj ett datum:</label>
+                <input type="number" id="dates" min="1" max="31">
+
+            </form>
+            <button type="submit" class="ok-btn">OK</button>
+
+        </div>
+
+        <div id="recurring-interval">
+            <form>              
+                <input type="checkbox" id="1">
+                <label for="1">varje</label>
+                <input type="checkbox" id="2">
+                <label for="2">varannan</label>
+                <input type="checkbox" id="3">
+                <label for="3">var tredje</label>
+                <input type="checkbox" id="4">
+                <label for="4">var fjärde</label>
+            </form>
+            <form>
+                <input type="checkbox" id="dag">
+                <label for="dag">dag</label>
+                <input type="checkbox" id="helg">
+                <label for="helg">helg</label>
+                <input type="checkbox" id="vecka">
+                <label for="vecka">vecka</label>
+                <input type="checkbox" id="månad">
+                <label for="månad">månad</label>
+            </form>       
+            <button type="submit" class="ok-btn">OK</button>             
+        </div>
+      </div>
+
+      <div id="travel-container-two">
+        <div class="booking-step">
+          <p>STEG 2/6</p>
+        </div>
+        <h3>Var vill du åka?</h3>
+        <form><h3>SÖK</h3> <input type="text" placeholder="T ex adress...">
+            <button type="submit" class="ok-btn">OK</button>
+            <h4>Sparade destinationer</h4>
+            <div class="saved-container" id="rec-saved-dest">
+                <button type="button" class="btn-blue" id="rec-dest-one">Barnbarnen</button>
+                <button type="button" class="btn-blue" id="rec-dest-two">Karolinska...</button>
+                <button type="button" class="btn-blue" id="rec-dest-three">Vårdcentralen</button>
+                <button type="button" class="btn-blue" id="rec-dest-four">Storgatan 8...</button>
+        </div>
+        </form>
+        <div id="hidden-container-destination">
+          <h4>Vårdcentralen</h4>
+          <p>Adress: Vårdvägen 3</p>
+        </div>
+        <button class="btn-blue" id="next-btn-two"> 
+          GÅ VIDARE</button>
+    </div>
+
+    <div id="travel-container-three">
+      <div class="booking-step">
+        <p>STEG 3/6</p>
+      </div>
+        <h3>Var åker du ifrån?</h3>
+        <div class="saved-container">
+            <button class="btn-blue" id="rec-saved-address">Sparade adresser</button>
+            <button class="btn-blue" id="other-address">Jag vill åka från en annan adress</button>
+        </div>
+        <div id="hidden-container-start">
+          <button type="button" class="btn-blue" id="start-one">Barnbarnen</button>
+              <button type="button" class="btn-blue" id="start-two">Karolinska...</button>
+              <button type="button" class="btn-blue" id="start-three">Vårdcentralen</button>
+              <button type="button" class="btn-blue" id="start-four">Storgatan 8...</button>
+              <button type="button" class="btn-blue" id="start-five">Hemma</button>
+        </div>
+        <button class="btn-blue" id="next-btn-three"> 
+          GÅ VIDARE</button>
+    </div>
+
+    <div id="travel-container-four">
+      <div class="booking-step">
+        <p>STEG 4/6</p>
+      </div>
+      <h3>Vill du boka en återkommande returresa?</h3>
+      <p>OBS! För att det ska räknas som en returresa, behöver den påbörjas senast 72 timmar efter den första resans avgångstid.</p>
+      <p>Från</p>
+      <p class="return-trip" id="return-from">FRÅN</p>
+      <p>Till</p>
+      <p class="return-trip" id="return-to">TILL</p>
+      <form>
+        <div id="third-column">
+          <input type="checkbox" id="mon">
+          <label for="mon">mån, 12 februari</label><br>
+          <input type="checkbox" id="tue">
+          <label for="tue">tisdag, 13 februari</label><br>
+          <input type="checkbox" id="wed">
+          <label for="wed">onsdag, 14 februari</label><br>
+          <input type="checkbox" id="thu">
+          <label for="thu">torsdag, 15 februari <b>senast klockan 10.00</b></label><br>
+        </div>
+      </form>
+      <form>
+        <div class="line"></div>
+        <h4>Klockslag</h4>
+        <input type="radio" id="depart" value="Avgång" checked>
+        <label for="depart">Avgång</label>
+        <input type="radio" id="arrival" value="Ankomst">
+        <label for="arrival">Ankomst</label>
+        <input type="text" id="hours" placeholder="HH:MM">
+      </form>
+      <button type="submit" class="btn-blue" id="show-container-btn">GÅ VIDARE</button>
+    </div>
+
+    <div id="recurring-container-two">
+      <div class="booking-step">
+        <p>STEG 5/6</p>
+      </div>
+      <h3>Under vilken tidsperiod ska denna resa vara återkommande?</h3>
+      <div id="recurring-details">
+        <div id="details-column-one">
+          <div id="column-one-a">
+            <h4>Till</h4>
+            <p>Vårdcentralen</p>
+          </div>
+          <div id="column-one-b">
+            <h4>Från</h4>
+            <p>Hemma, avgång 10.00</p>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div id="details-column-two">
+          <div id="column-one-c">
+            <h4>Från</h4>
+            <p>Vårdcentralen, avgång 11.30</p>
+          </div>
+          <div id="column-one-d">
+            <h4>Till</h4>
+            <p>Hemma</p>
+        </div>
+        </div>
+        <div class="line"></div>
+        <div id="details-column-three">
+          <h4>Startdatum:</h4>
+          <p>Måndag <br>12 februari 2024</p>
+        </div>
+        <div class="line"></div>
+        <div id="details-column-four">
+          <h4>Välj slutdatum:</h4>
+          <form>
+            <input type="number" min="1" max="31" placeholder="Datum">
+            <select>
+              <option  value="" style="display:none;">Månad</option>
+              <option  value="Jan">Januari</option>
+              <option  value="Feb">Februari</option>
+              <option  value="Mar">Mars</option>
+              <option  value="Apr">April</option>
+              <option value="May">Maj</option>
+              <option value="Jun">Juni</option>
+              <option value="Jul">Juli</option>
+              <option value="Aug">Augusti</option>
+              <option value="Sep">September</option>
+              <option value="Oct">Oktober</option>
+              <option value="Nov">November</option>
+              <option value="Dec">December</option>
+            </select>
+            <select>
+              <option value="" style="display:none;">År</option>
+              <option value="24">2024</option>
+              <option value="25">2025</option>
+            </select>          
+
+        </form>
+        <button type="submit" class="ok-btn" id="recurring-trip-btn">OK</button>
+        </div>
+        <div id="hidden-container-recurring">
+          <h4>Slutdatum:</h4>
+          <p>Måndag <br>6 maj 2024</p>
+        </div>
+      </div>
+      <button class="btn-blue" id="next-btn-four"> 
+        GÅ VIDARE</button>
+      
+
+    </div>
+
+    <div id="travel-container-five">
+      <div class="booking-step">
+        <p>STEG 6/6</p>
+      </div>
+      <h2>Tillval</h2>
+      <button type="button" class="btn-blue">Rullstol</button>
+      <button type="button" class="btn-blue">Ledsagare</button>
+      <button type="button" class="btn-blue">Sällskapsdjur</button>
+      <button type="button" class="btn-blue">Assistanshund</button>
+      <button type="button" class="btn-blue">Medresenär</button>
+      <button type="button" class="btn-blue">Annat...</button>
+      <form>        
+        <input type="checkbox" id="no-extra">
+        <label for="no-extra">inget tillval</label>
+      </form>
+
+    </div>
+
+    <a href="receipt_recurring.html"> <button role="link" class="btn-blue" id="check-btn">GRANSKA BOKNING</button></a>
+    </div>
+
+    <div class="search-bar">
+      <a href="index.html"><button role="link" class="btn-green">Till startsidan</button></a> 
+      <button class="btn-blue">Övriga frågor</button>
+    </div>
+      <div class="search">
+      <p>SÖK</p>  
+      <form>
+      <input type="text" name="search" />
+      <button class="ok-btn">OK</button>
+      </form>
+      <a href="availability.html"><p>Tillgänglighetsredogörelse</p></a>
+      </div>
+  
+  <script src="recurring.js"></script>
+  </body>
+  
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kvitto</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e7c2e63614.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header-header">
+      <span
+        ><a href="index.html">
+          <img id="logo" src="IMAGES/Fardtjansten-logga-768x768.jpg" alt="logo" /></a
+      ></span>
+      <h1>DIN BOKNING</h1>
+      <div class="important-container">
+        <h2>Du har bokat följande återkommande resa:</h2>
+        <h3>FRÅN</h3>
+        <div class="line"></div>
+        <p class="return-trip">HEMMA (Tallvägen 35)</p>
+        <p class="return-trip">måndagar klockan 10:00</p>
+        <h3>TILL</h3>
+        <div class="line"></div>
+        <p class="return-trip">VÅRDCENTRALEN (Vårdvägen 3)</p>
+        
+        <h2>Returresa</h2>
+        <h3>FRÅN</h3>
+        <div class="line"></div>
+        <p class="return-trip">VÅRDCENTRALEN (Vårdvägen 3)</p>
+        <p class="return-trip">måndagar klockan 11:30</p>
+        <h3>TILL</h3>
+        <div class="line"></div>
+        <p class="return-trip">HEMMA (Tallvägen 35)</p>
+        <h3>PERIOD</h3>
+        <div class="line"></div>
+        <p class="return-trip">12 februari till 6 maj 2024</p>
+        <h3>RESEDATUM</h3>
+        <div class="line"></div>
+        <div class="return-dates">
+        <p class="return-date">12 feb</p>
+        <p class="return-date">19 feb</p>
+        <p class="return-date">26 feb</p>
+        <p class="return-date">4 mar</p>
+        <p class="return-date">11 mar</p>
+        <p class="return-date">18 mar</p>
+        <p class="return-date">25 mar</p>
+        <p class="return-date">1 apr</p>
+        <p class="return-date">8 apr</p>
+        <p class="return-date">15 apr</p>
+        <p class="return-date">22 apr</p>
+        <p class="return-date">29 apr</p>
+        <p class="return-date">6 maj</p>
+      </div>
+      </div>
+
+      <div id="confirmation-container">
+        <h1>BEKRÄFTA</h1>
+        <button type="button" class="btn-blue" id="confirmation-btn">
+          JA, boka resan
+        </button>
+        <button type="button" class="btn-yellow" id="change-btn">
+          NEJ, ändra något
+        </button>
+      </div>
+      <div id="confirmation-text">Din resa är bokad!</div>
+    </div>
+
+    <div class="search-bar">
+      <a href="index.html"><button class="btn-green">Till startsidan</button></a> 
+      <button role="link" class="btn-blue">Övriga frågor</button>
+    </div>
+    <div class="search">
+        <p>SÖK</p>
+        <form>
+          <input type="text" name="search" />
+          <button class="ok-btn">OK</button>
+        </form>
+        <a href="availability.html"><p>Tillgänglighetsredogörelse</p></a>
+    </div>
+    <script src="receipt.js"></script>
+  </body>
+  
+</html>
